@@ -1,0 +1,14 @@
+version: '3.8' # Use a version compatible with your Docker Compose installation
+
+services:
+  redis:
+    image: "redis:latest" # Use the official Redis image from Docker Hub
+    container_name: "redis01" # Optional: Specify a custom container name
+    ports:
+      - "6379:6379" # Map the default Redis port to the host
+    volumes:
+      - "redis-data:/data" # Use a volume to persist Redis data
+    command: redis-server --appendonly yes # Optional: Enable AOF persistence
+
+volumes:
+  redis-data: # This named volume will be used for storing Redis data
