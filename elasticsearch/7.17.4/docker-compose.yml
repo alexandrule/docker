@@ -1,5 +1,3 @@
-version: '3.9'
-
 services:
 
   # Elasticsearch Docker Images: https://www.docker.elastic.co/
