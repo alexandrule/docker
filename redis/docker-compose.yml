@@ -1,5 +1,3 @@
-version: '3.8' # Use a version compatible with your Docker Compose installation
-
 services:
   redis:
     image: "redis:latest" # Use the official Redis image from Docker Hub
